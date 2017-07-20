@@ -125,7 +125,7 @@ You can also generate this list by calling `kao.moji.available()`
 * `blush`
 * `bow`
 * `bunny`
-* `rabbit` - Same as `rabbit`
+* `rabbit` - Same as `bunny`
 * `bye`
 * `hi` - Same as `bye`
 * `hello` - Same as `hi`
