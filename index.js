@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const exported = {};
 
-const Kaomoji = () => {
+const Kaomoji = function () {
     const jsonContents = fs.readFileSync("data/kaomoji.json");
 
     this.kaomoji = JSON.parse(jsonContents, 'utf8');
@@ -42,7 +42,7 @@ const Kaomoji = () => {
 };
 
 // Retrieves all available categories and returns them as an array.
-Kaomoji.prototype.available = () => {
+Kaomoji.prototype.available = function () {
     return Object.keys(this.categoryAliasMap);
 }
 
