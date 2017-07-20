@@ -1,9 +1,10 @@
 const fs = require('fs');
+const path = require('path');
 
 const exported = {};
 
 const Kaomoji = function () {
-    const jsonContents = fs.readFileSync("data/kaomoji.json");
+    const jsonContents = fs.readFileSync(path.resolve(__dirname, 'data', 'kaomoji.json'));
 
     this.kaomoji = JSON.parse(jsonContents, 'utf8');
     this.categoryAliasMap = {};
